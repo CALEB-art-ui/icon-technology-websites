@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HP EliteBook 820 G3 Review | Icon Technology</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="review-content">
+      <h1>HP EliteBook 820 G3 Review</h1>
+      <img src="images/images.jpeg" alt="HP EliteBook 820 G3" class="review-image">
+      <p>
+        The HP EliteBook 820 G3 is a lightweight and compact business laptop designed for professionals on the go. With a sleek design, robust performance, and enterprise-level security features, it’s a solid choice for business users.
+      </p>
+      <section class="slideshow">
+        <h2>HP EliteBook 820 G3 Image Slideshow</h2>
+        <div class="carousel">
+          <div class="slides">
+            <img src="images/070dc352-12d3-43aa-9563-052923763897.jpg" alt="Front View">
+            <img src="images/2dcb8eec-9363-4a8f-8fa8-483ac9d1bf47.jpg" alt="Side View">
+            <img src="images/0590ab9b-889e-4070-a9e3-232c1e78b3ac.jpg" alt="Back View">
+            <img src="images/e0b74a8a-6d3b-4a6c-9422-e69bbfe84acd.jpg" alt="Open Laptop">
+          </div>
+        </div>
+        <button class="prev" onclick="showPrev()">&#10094;</button>
+        <button class="next" onclick="showNext()">&#10095;</button>
+      </section>
+      
+
+      <h2>Key Features</h2>
+      <ul>
+        <li><strong>Processor:</strong> Intel Core i5-6200U (6th Gen)</li>
+        <li><strong>Display:</strong> 12.5-inch HD Anti-Glare Display</li>
+        <li><strong>RAM:</strong> 8GB DDR4</li>
+        <li><strong>Storage:</strong> 256GB SSD</li>
+        <li><strong>Ports:</strong> USB 3.0, USB-C, HDMI, Ethernet, and SD card reader</li>
+        <li><strong>Battery Life:</strong> Up to 10 hours</li>
+      </ul>
+
+      <h2>Pros</h2>
+      <ul>
+        <li>Lightweight and portable design</li>
+        <li>Solid build quality</li>
+        <li>Great keyboard for typing</li>
+        <li>Good performance for office tasks</li>
+      </ul>
+
+      <h2>Cons</h2>
+      <ul>
+        <li>Not suitable for heavy gaming or video editing</li>
+        <li>Display resolution could be higher</li>
+        <li>No dedicated GPU</li>
+      </ul>
+
+      <h2>Final Thoughts</h2>
+      <p>
+        The HP EliteBook 820 G3 is a dependable business laptop with a great mix of performance, portability, and security features. It’s perfect for professionals who need a compact laptop that can handle day-to-day tasks with ease.
+      </p>
+    </section>
+
+    <a href="reviews.html" class="btn btn-primary">Back to Reviews</a>
+  </main>
+  <script>
+    const slides = document.querySelector('.slides');
+    const images = document.querySelectorAll('.slides img');
+    let index = 0;
+  
+    function showNext() {
+      index = (index + 1) % images.length; // Loop to the first image
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    }
+  
+    function showPrev() {
+      index = (index - 1 + images.length) % images.length; // Loop to the last image
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    }
+  </script>
+  
+</body>
+</html>
